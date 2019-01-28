@@ -1,0 +1,6 @@
+case	type	status
+S	S	S
+all	type eq GO or type eq GTO or type eq CAL or type eq TOO or type eq DDT or type eq CCT	status ne unobserved and status ne untriggered and status ne canceled
+nocal	type eq GO or type eq GTO or type eq TOO or type eq DDT or type eq CCT	status ne unobserved and status ne untriggered and status ne canceled
+ggto	type eq GO or type eq GTO or type eq CCT	status ne unobserved and status ne untriggered and status ne canceled
+wip	type eq GO or type eq GTO or type eq CCT	status ne untriggered and status ne canceled

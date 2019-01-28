@@ -1,0 +1,5 @@
+#!/usr/local/bin/sqsh -S ocatsqlsrv -Uedgar
+
+
+select distinct convert(varchar(6), obsid) obsid, obs_ao_str, instrument, approved_exposure_time, rem_exp_time, grating, convert(varchar(10),type) type from target where ( instrument = "HRC-S" ) or ( instrument = "HRC-I" ) ; 
+
